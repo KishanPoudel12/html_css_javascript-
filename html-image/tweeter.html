@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>
+Twitter home display
+    </title>
+    <style>
+    .image{
+      width:200px;
+      height:200px;
+      object-position:center;
+      object-fit:cover;
+      border-radius:50%;
+      vertical-align:middle;
+      margin-left:0px;
+      margin-right:10px;
+    }
+    .status-bar{
+      font-size:50px;
+      vertical-align:middle ;
+      margin-left:0px;
+      margin-right:0px;
+      font-size:70px;
+      border-color:rgb(219, 211, 211);
+      /* border-radius:200px; */
+      border-style:solid;
+      padding-left:15px;
+      padding-right:0px;
+      border:none;
+      background-color:white;
+      
+      
+      
+    }
+    .tweet-button{
+  color:white;
+  background-color:rgb(67, 140, 230);
+  padding-left:50px;
+  padding-right:50px;
+  padding-top:20px;
+  padding-bottom:20px;
+  border:none;
+  border-radius:200px;
+  border-color:rgb(100, 168, 224);
+  font-weight:bold;
+  font-size:65px;
+  margin-left:100px;
+ transition:opacity 1px, box-shadow 0.9s;
+ vertical-align:middle;
+ cursor:pointer;
+}
+.tweet-button:hover{
+  opacity:0.8px;
+  box-shadow: 3px 3px 10px rgba(0 ,0, 0, 0.25);
+ }
+ .tweet-button:active{
+  transform:translateY(5px);
+  background-color:rgb(37, 111, 201);
+  box-shadow: 5px 5px 10px rgba(0,0,0,0.25);
+
+ }
+ .bordering{
+  width:1600px;
+  padding-top:40px;
+  padding-bottom:40px;
+  padding-left:40px;
+  padding-right:40px;
+  border:none;
+  border-color:rgb(141, 139, 139);
+  background-color:white;
+  border-radius:20px; 
+  /* margin:100px; */
+  box-shadow:5px 5px 10px rgba(0,0,0,0.25),
+  -5px -5px 10px rgba(0,0,0,0.25);
+  margin-left:1300px;
+  margin-top:50px;
+  display:inline-block;
+  text-align:center;
+}
+/* p{
+  margin-top:0px;
+  text-align:top;
+  display:block;
+} */
+    
+
+  </style>
+  </head>
+  <body>
+<div class="bordering">
+    <img  class="image" src="thumbnail/IMG_0096.jpg">
+    <input class="status-bar" type="text" placeholder="What's happening ?">
+  <button class="tweet-button">Tweet</button>
+</div>
+<!-- <p> kishan Poudel</p> -->
+  </body>
+  </html>
