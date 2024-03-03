@@ -4,28 +4,61 @@
    <title>Google.com</title>
    <style>
     .google{
-      text-align:middle;
-       display:block;
-       margin-left: 750px;
-       /* text-align: center;  */
-
+       display: inline-block;
+      margin-left:100px;
     }
     .search-box{
-      font-size:30px;
+      display:block;
+      font-size:35px;
       width:900px;
-      margin-left:600px;
-      border-radius:20px;
+      border-radius:30px;
       border-color:rgb(186, 184, 184);
       border-style:solid;
       background-color: rgb(245, 246, 248);
      padding-top:10px;
      padding-bottom:10px;
      padding-left:20px;
+     margin-left:0px;
+     border:none;
+     box-shadow: 2px 2px 10px rgba(0,0,0,0.25),
+     -2px -2px 10px rgba(0,0,0,0.25);
+     text-align:center;
+    } 
+   .buttons{
+    padding-top:5px;
+    margin-left:150px;
+    margin-top:30px;
+      
+     }
+   .button{
+    font-size:30px;
+    padding-top:10px;
+    padding-bottom:10px;
+    padding-left:10px;
+    padding-right:10px;
+    border:none;
+    margin-left:10px;
+   }
+    .top{
+    text-align:center;
     }
    </style>
   </head>
   <body>
-<img class="google" src="google-logo.png" >
-<input  class="search-box" type="text" placeholder="Search Google or type a URL">
+
+<!-- <div class="top"> -->
+  <img class="google" src="google-logo.png" >
+  <input  class="search-box" type="text" placeholder="Search Google or type a URL">
+<!-- </div> -->
+
+  <div class="buttons">
+<button class="button">
+  Google Search
+</button>
+<button class="button" >
+  I'm Feeling lucky
+</button>
+</div>
+
   </body>
 </html>
