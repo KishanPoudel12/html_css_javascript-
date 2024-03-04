@@ -6,8 +6,8 @@
     </title>
     <style>
       .thumbnail{
-        width:1500px;
-        margin-bottom:15px;
+        width:100%;
+        margin-bottom:1px;
       }
       p{
         font-family:arial;
@@ -24,9 +24,9 @@
         display:inline-block;
         line-height:95px;
       } 
-     .video-author,.video-stats{
+     /* .video-author,.video-stats{
       display:inline-block;
-     }
+     } */
      .video-author{
       font-size:55px;
       color:rgb(96, 96, 96);
@@ -51,9 +51,7 @@
 
       }
       .video-preview{
-        margin-right:50px;
         width:1500px;
-        display:inline-block;
         vertical-align:top;
         margin-bottom:20px;
 
@@ -70,38 +68,35 @@
       }
       .profile-pic{
         width:200px;
-        display:inline-block;
-        vertical-align:top;
+        background-color:gray;
       }
       .video-info{
-        /* font-family:; */
-        width:1250px;
-        display:inline-block;
-        margin-left:20px;
-        margin-top:0px;
+        width:100%;
+        background-color:gray;
       }
-      .thumbnail-row{
-        margin-bottom:30px;
-      }
-      .video-preview1,.video-preview2{
-        display:inline-block;
-        vertical-align:top;
-        margin-right:80px;
 
-      }
     </style>
   </head>  
-
-  <body>
+  <body style="
+  padding-bottom:10000px;">
     <input  class="textbox" type="text" placeholder="Search">
  <!-- 1st  video -->
+
+ <div style="
+ display:grid;
+ grid-template-columns:1fr 1fr 1fr ;
+ column-gap:30px;
+row-gap:30px;
+ ">
 <div class="video-preview1">
   <div class="thumbnail-row">
         <img  class="thumbnail" src="thumbnails/IMG_0096.jpg">
   </div>
 
 
-  <div>
+  <div  style="display:grid;
+         grid-template-columns:200px 1fr;
+  ">
 
       <div class="profile-pic">
          <img  class="author-img"src="thumbnails/IMG_0114.jpg"> 
@@ -112,34 +107,132 @@
           <p class="video-author"> KishanPoudel@</p>
          <p class="video-stats">3.4M views  &#183;6 months ago </p> 
       </div>
-
   </div>
    
  
 </div> 
-<!-- 2nd video -->
 
-<div class="video-preview2">
+<div class="video-preview1">
   <div class="thumbnail-row">
-        <img  class="thumbnail" src="thumbnails/IMG_0075.jpg">
+        <img  class="thumbnail" src="thumbnails/IMG_0096.jpg">
   </div>
 
 
-  <div>
+  <div  style="display:grid;
+         grid-template-columns:200px 1fr;
+  ">
 
       <div class="profile-pic">
-         <img  class="author-img"src="thumbnails/IMG_0075.jpg"> 
+         <img  class="author-img"src="thumbnails/IMG_0114.jpg"> 
       </div>
 
       <div class="video-info" >
-          <p class="video-title">Talking Non-Tech and AI with Non-CEO Kishan Poudel &#33; </p>
-          <p class="video-author"> PoudelKishan@</p>
-         <p class="video-stats">4.1M views  &#183;1 year ago </p> 
+          <p class="video-title">Talking Tech and AI with Google CEO Sundar Pichai	&#33; </p>
+          <p class="video-author"> KishanPoudel@</p>
+         <p class="video-stats">3.4M views  &#183;6 months ago </p> 
       </div>
+  </div>
+</div> 
 
+
+
+
+
+
+<div class="video-preview1">
+<div class="thumbnail-row">
+      <img  class="thumbnail" src="thumbnails/IMG_0096.jpg">
+</div>
+
+
+<div  style="display:grid;
+       grid-template-columns:200px 1fr;
+">
+
+    <div class="profile-pic">
+       <img  class="author-img"src="thumbnails/IMG_0114.jpg"> 
+    </div>
+
+    <div class="video-info" >
+        <p class="video-title">Talking Tech and AI with Google CEO Sundar Pichai	&#33; </p>
+        <p class="video-author"> KishanPoudel@</p>
+       <p class="video-stats">3.4M views  &#183;6 months ago </p> 
+    </div>
+</div>
+ 
+
+</div> 
+
+<div class="video-preview1">
+<div class="thumbnail-row">
+      <img  class="thumbnail" src="thumbnails/IMG_0096.jpg">
+</div>
+
+
+<div  style="display:grid;
+       grid-template-columns:200px 1fr;
+">
+
+    <div class="profile-pic">
+       <img  class="author-img"src="thumbnails/IMG_0114.jpg"> 
+    </div>
+
+    <div class="video-info" >
+        <p class="video-title">Talking Tech and AI with Google CEO Sundar Pichai	&#33; </p>
+        <p class="video-author"> KishanPoudel@</p>
+       <p class="video-stats">3.4M views  &#183;6 months ago </p> 
+    </div>
+</div>
+</div> 
+
+<div class="video-preview1">
+  <div class="thumbnail-row">
+        <img  class="thumbnail" src="thumbnails/IMG_0096.jpg">
+  </div>
+  
+  
+  <div  style="display:grid;
+         grid-template-columns:200px 1fr;
+  ">
+  
+      <div class="profile-pic">
+         <img  class="author-img"src="thumbnails/IMG_0114.jpg"> 
+      </div>
+  
+      <div class="video-info" >
+          <p class="video-title">Talking Tech and AI with Google CEO Sundar Pichai	&#33; </p>
+          <p class="video-author"> KishanPoudel@</p>
+         <p class="video-stats">3.4M views  &#183;6 months ago </p> 
+      </div>
   </div>
    
- 
+  
+  </div> 
+  
+  <div class="video-preview1">
+  <div class="thumbnail-row">
+        <img  class="thumbnail" src="thumbnails/IMG_0096.jpg">
+  </div>
+  
+  
+  <div  style="display:grid;
+         grid-template-columns:200px 1fr;
+  ">
+  
+      <div class="profile-pic">
+         <img  class="author-img"src="thumbnails/IMG_0114.jpg"> 
+      </div>
+  
+      <div class="video-info" >
+          <p class="video-title">Talking Tech and AI with Google CEO Sundar Pichai	&#33; </p>
+          <p class="video-author"> KishanPoudel@</p>
+         <p class="video-stats">3.4M views  &#183;6 months ago </p> 
+      </div>
+  </div>
+  </div> 
+  
+
+
 </div>
 
 </body>
