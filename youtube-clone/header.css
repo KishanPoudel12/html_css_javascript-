@@ -1,0 +1,25 @@
+.textbox {
+  font-size: 80px;
+  width: 1000px;
+  /* display: block; */
+}
+.header{
+  height:300px;
+  display:flex;
+  flex-direction:row;
+  justify-content:space-between;
+}
+.left-section{
+  background-color:pink;
+  width:1300px;
+}
+.middle-section{
+  background-color:bisque;
+  flex:1;
+  max-width:1600px;
+ 
+}
+.right-section{
+  background-color:rgb(30, 142, 179);
+  width:1500px;
+}
