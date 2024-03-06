@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>flex challange qstns</title>
+    <style>
+      .overall-result{
+        width:400px;
+        border-width:1px;
+        border-color:gray;
+        border-style:solid;
+        display:flex;
+        flex-direction:column;
+        /* min-width:283px; */
+        
+      }
+      p {
+        font-family: arial;
+      }
+      .sample {
+        height: 50px;
+        /* border-width: 2px; */
+        /* border-color: rgb(187, 21, 21); */
+        /* border-style: solid; */
+        display: flex;
+        flex: 1;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+      }
+      .para {
+        margin-top: 0px;
+        margin-bottom: 0px;
+      }
+
+      .button {
+        padding-top: 1px;
+        padding-bottom: 1px;
+        padding-right: 4px;
+        padding-left: 4px;
+        border-radius: 20px;
+        border: none;
+        background-color: blue;
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="overall-result">
+      <div class="sample">
+        <div class="para"><p>Home</p></div>
+        <div class="button"><button class="button">14</button></div>
+      </div>
+      <div class="sample">
+        <div class="para"><p>Notifications</p></div>
+        <div class="button"><button class="button">3</button></div>
+      </div>
+      <div class="sample">
+        <div class="para"><p>Messages</p></div>
+        <div class="button"><button class="button">4</button></div>
+      </div>
+    </div>
+  </body>
+</html>

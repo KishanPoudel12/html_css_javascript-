@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+  <head>
+<title>flexbox.com</title>
+<style >
+  .overall{
+    height:100px;
+    display:flex;
+    flex-direction:row;
+    justify-content:space-between;
+    align-items:center;
+    background-color:violet;
+
+  }
+  .button{
+    padding-top:5px;
+    padding-bottom:5px;
+    padding-right:15px;
+    padding-left:15px;
+  }
+  .left-section,.button{
+    font-size:25px;
+    padding-left:15px;
+  }
+  
+  .right-section{
+    background-color:pink;
+    /* flex:1; */
+    padding-right:15px;
+  }
+  .search-box{
+    border-radius:20px;
+    border:none;
+    /* width:900px; */
+    height:38px;
+    /* padding-left:200px; */
+  }
+   .middle-section{
+    background-color:rgb(25, 119, 156);
+    flex:1;
+    flex-direction:row;
+    max-width:600px;
+    align-items:center;
+    padding-left:20px;
+  }  
+</style>
+  </head>
+  <body>
+<div class="overall">
+  <div class="left-section">Home</div>
+  <div class="middle-section"> 
+    <input  class="search-box" type="text" placeholder="Search" >
+  </div>
+<div class="right-section"> 
+  <button class="button"> Download</button>
+</div>
+
+
+
+
+</div>
+  </body>
+</html>
