@@ -1,25 +1,111 @@
 .textbox {
+  width:0px;
   font-size: 80px;
-  width: 1000px;
-  /* display: block; */
+  /* display:flex; */
+  flex:1;
+  height:180px;
+  border-width:1px;
+  border-style:solid;
+  border-radius:5px;
+  box-shadow: inset 3px 3px 3px rgba(0,0,0,0.25),
+  inset
+  -3px -3px 3px rgba(0,0,0,0.25);
+}
+.textbox::placeholder{
+  font-family:arial;
+  font-size:100px;
+  padding-left:20px;
 }
 .header{
   height:300px;
   display:flex;
   flex-direction:row;
   justify-content:space-between;
+  margin-bottom:25px;
 }
-.left-section{
-  background-color:pink;
-  width:1300px;
-}
-.middle-section{
-  background-color:bisque;
-  flex:1;
-  max-width:1600px;
- 
-}
+
 .right-section{
-  background-color:rgb(30, 142, 179);
-  width:1500px;
+  /* background-color:rgb(30, 142, 179); */
+  width:1300px;
+  display:flex; 
+  justify-content:space-between;
+  align-items:center;
+  padding-left:20px;
+  flex-shrink:0;
+}
+.hamburger-icon {
+  /* width:100px; */
+  height: 150px;
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+.youtube-logo {
+  height: 150px;
+  padding-left: 100px;
+  padding-right: 100px;
+}
+
+.left-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* background-color: pink; */
+  width: 1200px;
+  flex-shrink:0;
+}
+
+.search-button {
+  border-width: 1px;
+  background-color: rgb(237, 234, 234);
+  height: 186px;
+  width: 300px;
+  vertical-align: top;
+  border-color: rgb(117, 117, 117);
+  border-style: solid;
+  border-radius: 5px;
+  box-shadow: inset 3px 3px 3px rgba(0, 0, 0, 0.25),
+    inset -3px -3px 3px rgba(0, 0, 0, 0.25);
+  margin-left: -3px;
+  margin-right: 80px;
+}
+
+.search-icon {
+  /* padding-top:10px;
+  padding-bottom:10px;
+  padding-right:10px;
+  padding-left:10px; */
+  height: 150px;
+  width: 200px;
+  border-width: 1px;
+
+}
+
+.voice-search-icon {
+  height: 100px;
+  width: 100px;
+}
+
+.middle-section {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  /* background-color: bisque; */
+  flex: 1;
+  margin-right:60px;
+}
+
+.voice-search-button {
+  height: 186px;
+  width: 186px;
+  border-radius: 50%;
+  border: none;
+  background-color: rgb(206, 206, 206);
+}
+
+.upload-icon,
+.youtube-apps-icon,
+.notification-icon {
+  height: 150px;
 }
