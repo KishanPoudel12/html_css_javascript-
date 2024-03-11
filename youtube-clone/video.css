@@ -1,3 +1,22 @@
+.time-period{
+  position:absolute;
+  background-color:rgb(15, 15, 15);
+  color:white;
+  bottom:65px;
+  right:20px;
+  font-size:80px;
+  font-family:arial;
+  font-weight:bold;
+  padding-left:2px;
+  padding-right:2px;
+  padding-top:4px;
+  padding-bottom:4px;
+  border-radius:2px;
+}
+.thumbnail-row{
+  position:relative;
+
+}
 .thumbnail {
   width: 100%;
   margin-bottom: 40px;

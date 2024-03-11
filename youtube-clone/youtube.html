@@ -6,14 +6,19 @@
   <link rel="stylesheet" href="video.css">
   <link rel="stylesheet" href="general.css">
   <link rel="stylesheet" href="header.css">
+  <link rel="stylesheet" href="side-bar.css">
 
-  
 </head>
 
 <body style="padding-bottom: 1000px;
+            height:10000px;
             margin:0px;
             max-width:100%;
             overflow-x: hidden;
+            padding-top:400px;  
+            padding-left:400px;  
+            padding-right:40px;  
+            background-color:rgb(248, 248, 248);
             ">
   <div class="header">
 
@@ -26,36 +31,92 @@
       <input class="textbox" type="text" placeholder="Search" />
       <button class="search-button">
         <img class="search-icon" src="icons/search.svg">
+        <div class="tooltip">Search</div>
       </button>
       <button class="voice-search-button">
         <img class="voice-search-icon" src="icons/voice-search-icon.svg">
+        <div class="tooltip">Search with your voice</div>
       </button>
     </div>
     <div class="right-section">
-      <img class="upload-icon" src="icons/upload.svg">
-      <img class="youtube-apps-icon" src="icons/youtube-apps.svg">
-      <img class="notification-icon" src="icons/notifications.svg">
+      <div class="upload-icon-div">
+        <img class="upload-icon" src="icons/upload.svg">
+        <div class="tooltip">Upload</div>
+      </div>
+
+      <div class="youtube-apps-icon-div">
+        <img class="youtube-apps-icon" src="icons/youtube-apps.svg">
+        <div class="tooltip">Youtube-apps</div>
+      </div>
+      <div class="notification-icon-div">
+        <img class="notification-icon" src="icons/notifications.svg">
+        <div class="tooltip">Notifications</div>
+
+
+        <div style="
+      background-color:rgb(211, 27, 27);
+      color:white;
+      font-size:60px;
+      font-family:arial;
+      top:8px;
+      right:15px;
+      position:absolute;
+      padding-left:13px;
+      padding-right:13px;
+      padding-top:3px;
+      padding-bottom:0px;
+      border-radius:50%;
+
+      ">3</div>
+      </div>
       <img class="author-img" src="thumbnails/IMG_0114.jpg" />
       <!-- <p class="image">@</p> -->
-
     </div>
 
+  </div>
+  <div class="side-bar">
+    <div class="side-bar-link">
+      <img src="icons/home.svg">
+      <div>Home</div>
+    </div>
+    <div class="side-bar-link">
+      <img src="icons/explore.svg">
+      <div>Explore</div>
+    </div>
+    <div class="side-bar-link">
+      <img src="icons/subscriptions.svg">
+      <div>Subscriptions</div>
+
+    </div>
+    <div class="side-bar-link">
+      <img src="icons/originals - Copy.svg">
+      <div>Originals</div>
+    </div>
+    <div class="side-bar-link">
+      <img src="icons/youtube-music.svg">
+      <div>Youtube</div>
+    </div>
+    <div class="side-bar-link">
+      <img class="sidebar-icons" src="icons/library.svg">
+      <div>Library</div>
+    </div>
   </div>
   <!-- 1st  video -->
 
   <div style="
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
-        column-gap: 30px;
-        row-gap: 30px;
+        column-gap: 60px;
+        row-gap: 60px;
           ">
     <div class="video-preview1">
       <div class="thumbnail-row">
         <img class="thumbnail" src="thumbnails/IMG_0096.jpg" />
+        <div class="time-period"> 5:55</div>
       </div>
 
       <div style="display: grid;
-         grid-template-columns: 200px 1fr">
+         grid-template-columns: 230px 1fr;">
         <div class="profile-pic">
           <img class="author-img" src="thumbnails/IMG_0114.jpg" />
         </div>
@@ -73,9 +134,10 @@
     <div class="video-preview1">
       <div class="thumbnail-row">
         <img class="thumbnail" src="thumbnails/IMG_0096.jpg" />
+        <div class="time-period"> 6:00</div>
       </div>
 
-      <div style="display: grid; grid-template-columns: 200px 1fr">
+      <div style="display: grid; grid-template-columns: 230px 1fr">
         <div class="profile-pic">
           <img class="author-img" src="thumbnails/IMG_0114.jpg" />
         </div>
@@ -93,9 +155,10 @@
     <div class="video-preview1">
       <div class="thumbnail-row">
         <img class="thumbnail" src="thumbnails/IMG_0096.jpg" />
+        <div class="time-period"> 20:00</div>
       </div>
 
-      <div style="display: grid; grid-template-columns: 200px 1fr">
+      <div style="display: grid; grid-template-columns: 230px 1fr">
         <div class="profile-pic">
           <img class="author-img" src="thumbnails/IMG_0114.jpg" />
         </div>
@@ -113,9 +176,10 @@
     <div class="video-preview1">
       <div class="thumbnail-row">
         <img class="thumbnail" src="thumbnails/IMG_0096.jpg" />
+        <div class="time-period"> 4:23</div>
       </div>
 
-      <div style="display: grid; grid-template-columns: 200px 1fr">
+      <div style="display: grid; grid-template-columns: 230px 1fr">
         <div class="profile-pic">
           <img class="author-img" src="thumbnails/IMG_0114.jpg" />
         </div>
@@ -133,11 +197,13 @@
     <div class="video-preview1">
       <div class="thumbnail-row">
         <img class="thumbnail" src="thumbnails/IMG_0096.jpg" />
+        <div class="time-period"> 2:49</div>
       </div>
 
-      <div style="display: grid; grid-template-columns: 200px 1fr">
+      <div style="display: grid; grid-template-columns: 230px 1fr">
         <div class="profile-pic">
           <img class="author-img" src="thumbnails/IMG_0114.jpg" />
+
         </div>
 
         <div class="video-info">
@@ -153,9 +219,10 @@
     <div class="video-preview1">
       <div class="thumbnail-row">
         <img class="thumbnail" src="thumbnails/IMG_0096.jpg" />
+        <div class="time-period"> 3:55</div>
       </div>
 
-      <div style="display: grid; grid-template-columns: 200px 1fr">
+      <div style="display: grid; grid-template-columns: 230px 1fr">
         <div class="profile-pic">
           <img class="author-img" src="thumbnails/IMG_0114.jpg" />
         </div>
