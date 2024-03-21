@@ -1,7 +1,8 @@
 body {
   margin: 0px;
-  color: rgb(116, 112, 112);
+ background-color : rgb(205, 201, 201);
   height:5000px;
+
 }
 /* ***************header************* */
 
@@ -96,7 +97,7 @@ body {
 .location-logo {
   /* background-color: white; */
   height: 30px;
-  padding-top: 10px;
+  padding-top: 20px;
 }
 
 .middle-section {
@@ -377,8 +378,104 @@ body {
   top:90px;
 }
 
+
 .hero-image{
   height:900px;
   object-fit:cover;
    width:100%;
+}
+
+
+.product-section{
+  position:relative;
+  top:-500px;
+  display:flex;
+  flex-wrap:wrap;
+  align-items:center;
+  justify-content:space-around;
+}
+.product-cart{
+  flex:1;
+  /* background-color:#faae4c; */
+  height:600px;
+  margin-right:10px;
+  margin-left:10px;
+  min-width:300px;
+ position:static;
+ /* border-color:black; */
+ /* border-width:1px; */
+ /* border-style:solid; */
+ background-color:white;
+}
+.product-cart div{
+   display:inline-block;
+}
+
+.row1{
+  /* background-color: blue; */
+  padding-left:30px;
+  padding:20px;
+  /* background-color:blue; */
+  font-size:29px;
+  line-height:35px;
+  font-family:arial;
+  font-weight:bold;
+  /* margin-right:5%; */
+  min-width: 200px;
+  color:black;
+}
+.row2{
+  /* padding:20px; */
+  /* background-color:green; */
+  display:flex;
+  flex-flow: row wrap;
+  align-items:center;
+  justify-content:space-between;
+  height:360px;
+  /* padding-left:60px; */
+  padding-top:20px;
+  padding-bottom:20px;
+  padding-right:15px;
+  padding-left:15px;
+}
+.product{
+  flex:1;
+  /* background-color: red; */
+  /* margin:10px; */
+  display:inline-block;
+  width:49%;
+  height:150px;
+  /* margin-top:5px; */
+  /* padding-top:10px; */
+
+}
+
+.product span{
+  color:gray;
+  display:block;
+  margin:0px;
+  font-size:20px;
+  font-family:arial;
+  display:flex;
+  flex-wrap:nowrap;
+  padding-bottom:20px;
+}
+
+.product-image{
+  /* background-color: rgb(56, 161, 196); */
+  width:100%;
+  height:150px;
+  object-fit:cover;
+  
+
+}
+.link-section{
+  font-family:arial;
+  font-size:20px;
+  position:relative;
+  top:40px;
+  padding-left:20px;
+}
+.link{
+ color:#007185;
 }
