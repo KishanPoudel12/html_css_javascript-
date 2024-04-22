@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>CoinFlip-Game</title>
+</head>
+<body>
+  <script>
+    let randomGuess=Math.random();
+    let guess=`Head`;
+    let result= (randomGuess<=0.5)? `Head` : `Tail` ;
+    console.log(`The Result is ${result}`);
+    console.log((guess === result ) ? 'You win' : 'You lose');
+  </script>
+</body>
+</html>
