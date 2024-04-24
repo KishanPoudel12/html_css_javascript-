@@ -58,20 +58,31 @@
       Scissors
     </button>
     <button  onclick="
-    object.wins=0;
+    object.wins =0;
     object.loses=0;
-    object.ties=0;
+    object.ties =0;
+    localStorage.removeItem('score');
     console.log(object);
     ">
       Reset score
     </button>
 
     <script>
-      const object={
-        wins : 0,
-        loses: 0,
-        ties : 0
-      };
+      let object= JSON.parse(localStorage.getItem("score")) || {
+          wins:0,
+          loses:0,
+          ties:0
+        };  
+
+     /* 
+     if(!object){
+        object={
+          wins:0,
+          loses:0,
+          ties:0
+        };         
+      }
+      */
 
       let computerMove = "";
       function computerGuess() {
@@ -113,17 +124,19 @@
             result = "You win";
           }
         }
+        
         alert(`You chose ${playerMove}.Computer choose ${computerMove}.${result}
         wins:${object.wins} loss:${object.loses} ties:${object.ties}.`);
-
+        
         if(result=== 'You win'){
-        object.wins +=1;
+          object.wins +=1;
         }else if (result==='You lose'){
           object.loses+=1;
         }else if (result==='Tie'){
           object.ties+=1;
         }
-        console.log(object);
+        // console.log(object);
+        localStorage.setItem("score",JSON.stringify(object));
       }
     </script>
   </body>
