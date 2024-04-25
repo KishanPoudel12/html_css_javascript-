@@ -2,20 +2,29 @@
 <html lang="en">
 <head>
   <title>5c-exersice</title>
+  <style>
+    button{
+      padding: 100px;
+      font-size:200px;
+    }
+  </style>
 </head>
 <body>
-
+  <!-- Reducing Total Cost  -->
+<button onclick="
+  totalCost-=1;
+  console.log(`totalCost reduced by 1`);
+  console.log(`TotalCost is $${totalCost}`);
+  ">
+  Tax reduction button
+</button>
   <script>
-
-    let Cost = Math.round(1*500+2*300+1*900)/100 ;
-    console.log(`cost of food: $${Cost}`);
-    
-    let tax= Cost*0.1;
-    console.log(`tax(10%) = $${tax}`);
-
-    let totalCost=Cost + tax;
-    console.log(`totalCost=$${totalCost}`);
+   let cost =Math.round((1*500)+(2*300)+(900))/100;
+   console.log(`The cost of items = $${cost}`);
+   let tax = cost * 0.1;
+   console.log(`Tax(10%)          = $${tax}`);
+   let totalCost= cost + tax;
+   console.log(`Total cost        = $${totalCost}`);
   </script>
-  
 </body>
 </html>

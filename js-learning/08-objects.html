@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Objects</title>
+</head>
+<body>
+  <script>
+    // const product = {
+    //   Name: 'Kishan' ,
+    //   Surname: 'Poudel' 
+    // };
+    // console.log(product);
+    // console.log(product.Name);
+    // console.log(product.Surname);
+    // delete product.Name;
+    // console.log(product);
+    const product={
+      name :'kishan',
+      ['delivary-time']: 'Poudel',
+      rating: {
+        stars:4.5,
+        comments:20
+      },
+      fun: function function1(){
+        console.log(product);
+      }
+    };
+    console.log(product.rating.stars);
+    console.log(product.rating.comments);
+    console.log(product.name);
+    console.log(product['name']);
+    console.log(product['delivary-time']);
+    console.log(product.fun);
+    console.log(typeof console);
+
+
+    const jsonString=JSON.stringify(product);
+    console.log(jsonString);
+    console.log(typeof JSON.stringify(product));
+   console.log(JSON.parse(jsonString));
+   console.log(typeof JSON.parse(jsonString));
+  </script>
+
+</body> 
+</html>
