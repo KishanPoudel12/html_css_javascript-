@@ -25,6 +25,7 @@
         console.log(product);
       }
     };
+
     console.log(product.rating.stars);
     console.log(product.rating.comments);
     console.log(product.name);
@@ -39,6 +40,19 @@
     console.log(typeof JSON.stringify(product));
    console.log(JSON.parse(jsonString));
    console.log(typeof JSON.parse(jsonString));
+      
+
+   const kishan={
+    name :'Kishan',
+    caste:'Poudel'
+   };
+
+   console.log( kishan);
+   kishan.gender='M';
+   console.log(kishan);
+   delete kishan.gender;
+   console.log(kishan);
+
   </script>
 
 </body> 
