@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ 
+  <title>DOM</title>
+  <style>
+    p{
+       font-size:100px; 
+    }
+    button{
+      font-size:100px;
+      padding:20px;
+    }
+  </style>
+</head>
+<body>
+  <p>Youtube Subscribe Button</p>
+  <button class="hero" onclick="
+  subscribeButton();
+  ">Subscribe</button>
+  <script>
+    function subscribeButton(){
+      const buttonElement= document.querySelector('.hero');
+
+    if(buttonElement.innerText==='Subscribe'){
+      buttonElement.innerHTML='Subscribed';
+    }else{
+      buttonElement.innerHTML='Subscribe';
+    }
+    }
+  </script>
+</body>
+</html>
