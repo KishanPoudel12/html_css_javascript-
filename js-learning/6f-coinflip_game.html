@@ -1,15 +1,89 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <title>CoinFlip-Game</title>
-</head>
-<body>
-  <script>
-    let randomGuess=Math.random();
-    let guess=`Head`;
-    let result= (randomGuess<=0.5)? `Head` : `Tail` ;
-    console.log(`The Result is ${result}`);
-    console.log((guess === result ) ? 'You win' : 'You lose');
-  </script>
-</body>
+  <head>
+    <title>CoinFlip-Game</title>
+    <style>
+      button {
+        padding: 100px;
+        font-size: 100px;
+        margin: 200px;
+      }
+    </style>
+  </head>  
+
+  <body>
+    <button
+      onclick="
+    // console.log(computerMove);
+    PlayerMove('Head');
+    "
+    >
+      HEAD
+    </button>
+    <button
+      onclick="
+  // computerMove=computerGuess();
+  // console.log(computerMove);
+  PlayerMove('Tails');
+  "
+    >
+      TAIL
+    </button>
+    <button
+      onclick="
+  score.wins=0;
+  score.loss=0;
+  localStorage.removeItem('score');
+  console.log(score);
+  "
+    >
+      NEW GAME
+    </button>
+    <script>
+      // let computerMove = computerGuess();
+      let score = JSON.parse(localStorage.getItem("prev_score")) || 
+      {
+        wins: 0,
+        loss: 0,
+      };
+      
+      function computerGuess() {
+        let computerMove = "";
+        const compMove = Math.random();
+        // console.log(compMove);
+        if (compMove > 0 && compMove < 1 / 5) {
+          computerMove = "Head";
+        } else if (compMove >= 1 / 5 && compMove < 1) {
+          computerMove = "Tails";
+        }
+        return computerMove;
+      }
+
+      function PlayerMove(playerMove) {
+        let result = "";
+        computerMove = computerGuess();
+        console.log(`You moved ${playerMove}`);
+        console.log(`Computer moved ${computerMove}`);
+
+        if (computerMove === playerMove) {
+          result = "You win";
+          console.log(result);
+        } else {
+          result = "You lose";
+          console.log(result);
+        }
+        if (result === "You win") {
+          score.wins++;
+        } else {
+          score.loss++;
+        }
+        console.log(score);
+
+        localStorage.setItem("prev_score", JSON.stringify(score));
+
+        alert(`Your Move ${playerMove}  ,Computer Move =${computerMove}.
+Wins:   ${score.wins}        Loss:  ${score.loss}`);
+      }
+    </script>
+  </body>
 </html>
